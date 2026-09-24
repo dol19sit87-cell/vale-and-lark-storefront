@@ -15,7 +15,7 @@
     const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
     if (Array.isArray(saved)) bag = saved.filter(line => line && Object.hasOwn(variants, line.id) && Number.isInteger(line.quantity) && line.quantity > 0 && line.quantity <= 99).map(({id, quantity}) => ({id, quantity}));
   } catch { /* Shopping still works when browser storage is unavailable. */ }
-  const photoPath = (color, index, thumb = false) => `assets/${index === 4 ? 'outdoor' : 'studio'}_${color}_${photos[index]}${color === 'mocha' && index === 0 ? '-v2' : ''}${thumb ? '-thumb' : ''}.webp${color === 'mocha' && index === 0 ? '?v=20260924-102350' : ''}`;
+  const photoPath = (color, index, thumb = false) => `assets/${index === 4 ? 'outdoor' : 'studio'}_${color}_${photos[index]}${color === 'mocha' && index === 0 ? '-v2' : ''}${thumb ? '-thumb' : ''}.webp${color === 'mocha' && index === 0 ? '?v=e78827c62cb0' : ''}`;
   const checkoutURL = lines => `https://valeandlark.com/cart/${lines.map(line => `${line.id}:${line.quantity}`).join(',')}?currency=USD`;
   const chosenVariant = () => state.size ? colors[state.color].variants[state.size] : null;
   function showPhoto(index) {

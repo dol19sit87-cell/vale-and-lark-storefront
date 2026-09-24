@@ -22,7 +22,7 @@ Open http://localhost:8765.
 
 ## Assets and publishing
 
-`dist/` contains the deployable site. The first Mocha photo uses the user-supplied `Image_20260924_102350.png`, encoded as WebP without generative edits. Its existing filename `studio_mocha_front-v2.webp` and matching thumbnail are retained, with a new cache revision. The preceding generated photo is preserved in `asset-archive/2026-09-24-before-user-photo/`. All original user photographs remain untouched. Google Fonts supplies DM Sans and Instrument Serif; system fallbacks are declared.
+`dist/` contains the deployable site. The first Mocha photo uses the latest user-supplied `ЧИСТОВИК-L2/studio_mocha_front.png` (updated 2026-09-24), encoded as WebP without further generative edits. Its existing filename `studio_mocha_front-v2.webp` and matching thumbnail are retained, with a content-based cache revision. Prior versions are preserved in `asset-archive/`. Original user photographs remain untouched. Google Fonts supplies DM Sans and Instrument Serif; system fallbacks are declared.
 
 The public preview is hosted through Sites; the code is mirrored to GitHub. The live checkout and policy destinations remain on valeandlark.com. This is a design preview, with indexing disabled to avoid duplicating the existing store in search results.
 
